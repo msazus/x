@@ -1,4 +1,4 @@
-const CONFIG={"https://www.ds88trk.com/2T9DHQP/3J5QP48/?source_id=sx3&sub1=sx3"};
+const CONFIG={signupLink:"YOUR_SIGNUP_LINK"};
 const video=document.getElementById("video");
 video.play().catch(()=>{});
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)video.play().catch(()=>{})});
