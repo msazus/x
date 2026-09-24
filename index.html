@@ -3,49 +3,66 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b0822">
-<title>Premium Video Access</title>
+<meta name="theme-color" content="#2a1221">
+<title>VideoAccess — Premium</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="orb a"></div><div class="orb b"></div>
-<main class="shell">
-<header class="topbar">
-  <div class="brand"><span class="logo">✦</span><span><b>Video<span>Access</span></b><small>Private video experience</small></span></div>
-  <div class="secure">🔒 Protected playback</div>
+<div class="bg-orb peach"></div>
+<div class="bg-orb eggplant"></div>
+<div class="bg-orb chili"></div>
+<div class="sparkles"></div>
+
+<main>
+<header>
+  <a class="brand" href="#">
+    <span class="brand-logo">♥</span>
+    <span><b>Video<span>Access</span></b><small>Premium private experience</small></span>
+  </a>
+  <span class="secure">🔒 SECURE</span>
 </header>
 
 <section class="hero">
-  <div class="video">
-    <!-- Replace YOUR_REDGIFS_EMBED_URL with your own/authorized Redgifs embed URL -->
-    <iframe src="YOUR_REDGIFS_EMBED_URL" title="Video player"
-      allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-    <div class="shade"></div><label>PRIVATE</label>
+  <div class="video-card">
+    <video id="video" autoplay muted loop playsinline controls>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+    <div class="video-shade"></div>
+    <div class="playing"><i></i> PLAYING</div>
   </div>
-  <div class="welcome">WELCOME</div>
-  <h1>Enjoy the video.<br><span>Choose how you want to continue.</span></h1>
-  <p class="sub">Access options are available below.</p>
+
+  <div class="eyebrow">PREMIUM EXPERIENCE</div>
+  <h1>Watch. Connect. <span>Enjoy.</span></h1>
+  <p class="intro">Choose your experience below.</p>
+
+  <div class="buttons">
+    <button class="action free" data-type="free">
+      <span class="icon">▶</span>
+      <span class="copy"><b>All Free Videos</b><small>Explore free videos</small></span>
+      <strong>→</strong>
+    </button>
+
+    <button class="action call" data-type="call">
+      <span class="icon video-call-icon">
+        <span class="camera-body"></span>
+        <span class="camera-lens"></span>
+      </span>
+      <span class="copy"><b>Video Call</b><small>Start a private video call</small></span>
+      <strong>→</strong>
+    </button>
+  </div>
 </section>
 
-<section class="options">
-  <button class="option" data-action="free">
-    <i>▶</i><span><b>All Free Videos</b><small>Explore available videos</small></span><em>→</em>
-  </button>
-  <button class="option call" data-action="call">
-    <i>◉</i><span><b>Video Call</b><small>Continue to video call access</small></span><em>→</em>
-  </button>
-</section>
-
-<section class="gate" id="gate" aria-hidden="true">
-  <div class="lock">🔐</div>
-  <small>ACCESS REQUIRED</small>
+<section class="gate" id="gate">
+  <div class="gate-logo">♥</div>
+  <div class="eyebrow">ACCESS REQUIRED</div>
   <h2>Sign Up to Access</h2>
-  <p id="gateText">Create access through the secure sign-up page to continue.</p>
-  <a id="continue" href="YOUR_SIGNUP_LINK">Sign Up &amp; Continue <b>→</b></a>
+  <p id="message">Sign up to continue.</p>
+  <a id="signup" href="YOUR_SIGNUP_LINK">Sign Up &amp; Continue <b>→</b></a>
   <button id="close">Maybe later</button>
 </section>
 
-<footer>🔒 Secure access &nbsp;•&nbsp; © <span id="year"></span> VideoAccess</footer>
+<footer>🔒 Secure access • © <span id="year"></span> VideoAccess</footer>
 </main>
 <script src="script.js"></script>
 </body>
