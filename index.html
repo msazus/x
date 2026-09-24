@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0822">
+<title>Premium Video Access</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="orb a"></div><div class="orb b"></div>
+<main class="shell">
+<header class="topbar">
+  <div class="brand"><span class="logo">✦</span><span><b>Video<span>Access</span></b><small>Private video experience</small></span></div>
+  <div class="secure">🔒 Protected playback</div>
+</header>
+
+<section class="hero">
+  <div class="video">
+    <!-- Replace YOUR_REDGIFS_EMBED_URL with your own/authorized Redgifs embed URL -->
+    <iframe src="YOUR_REDGIFS_EMBED_URL" title="Video player"
+      allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <div class="shade"></div><label>PRIVATE</label>
+  </div>
+  <div class="welcome">WELCOME</div>
+  <h1>Enjoy the video.<br><span>Choose how you want to continue.</span></h1>
+  <p class="sub">Access options are available below.</p>
+</section>
+
+<section class="options">
+  <button class="option" data-action="free">
+    <i>▶</i><span><b>All Free Videos</b><small>Explore available videos</small></span><em>→</em>
+  </button>
+  <button class="option call" data-action="call">
+    <i>◉</i><span><b>Video Call</b><small>Continue to video call access</small></span><em>→</em>
+  </button>
+</section>
+
+<section class="gate" id="gate" aria-hidden="true">
+  <div class="lock">🔐</div>
+  <small>ACCESS REQUIRED</small>
+  <h2>Sign Up to Access</h2>
+  <p id="gateText">Create access through the secure sign-up page to continue.</p>
+  <a id="continue" href="YOUR_SIGNUP_LINK">Sign Up &amp; Continue <b>→</b></a>
+  <button id="close">Maybe later</button>
+</section>
+
+<footer>🔒 Secure access &nbsp;•&nbsp; © <span id="year"></span> VideoAccess</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
